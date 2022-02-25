@@ -1,6 +1,5 @@
 ﻿import time
 import time_api
-import json_data
 import time_control
 
 
@@ -23,8 +22,8 @@ set_time_min=12 #开始执行的分钟时刻设置
 
 
 if __name__ == "__main__":
-    set_time_hour = input("请输入一个整数小时0-23")
-    set_time_min = input("请输入一个分钟小时0-59")
+    set_time_hour = int(input("请输入一个整数小时0-23:"))
+    set_time_min = int(input("请输入一个分钟小时0-59:"))
     time_control.main(ex1,set_time_hour,set_time_min)
 
 
